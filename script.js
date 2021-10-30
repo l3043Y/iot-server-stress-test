@@ -2,8 +2,11 @@ import http from 'k6/http';
 import { check } from 'k6';
 import { randomIntBetween, uuidv4 } from "https://jslib.k6.io/k6-utils/1.0.0/index.js";
 // import { sleep } from 'k6';
-const users = 4000;
+const users = 6000;
 export const options = {
+    noConnectionReuse: false,
+    noCookiesReset: true,
+    noVUConnectionReuse: false,
     scenarios: {
       constant_request_rate: {
         executor: 'constant-arrival-rate',
@@ -35,6 +38,6 @@ export default function () {
     check(res, {
         'is status 200': (r) => r.status === 200,
         'record is saved': (r) =>
-            r.body.includes('Records added successfully!!'),
+            r.body && r.body.includes('Records added successfully!!'),
     });
 }
