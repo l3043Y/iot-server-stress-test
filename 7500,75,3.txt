@@ -1,0 +1,23 @@
+running (3m00.9s), 0000/7500 VUs, 1315213 complete and 0 interrupted iterations
+constant_request_rate ✓ [=========] 0000/7500 VUs  3m0s  7500 iters/s 
+     ✓ is status 200
+     ✓ record is saved
+
+     checks.........................: 100.00% ✓ 2630426     ✗ 0       
+     data_received..................: 558 MB  3.1 MB/s
+     data_sent......................: 318 MB  1.8 MB/s
+     dropped_iterations.............: 34788   192.350469/s
+     http_req_blocked...............: avg=12.45ms  min=0s      med=0s  max=3.03s  p(90)=0s       p(95)=0s
+     http_req_connecting............: avg=12.39ms  min=0s      med=0s  max=3.03s  p(90)=0s       p(95)=0s
+     http_req_duration..............: avg=153.77ms min=954µs   med=3ms max=35.22s p(90)=452.83ms p(95)=762ms
+       { expected_response:true }...: avg=153.77ms min=954µs   med=3ms max=35.22s p(90)=452.83ms p(95)=762ms
+     http_req_failed................: 0.00%   ✓ 0           ✗ 1315213 
+     http_req_receiving.............: avg=673.25µs min=0s      med=0s  max=1.48s  p(90)=0s       p(95)=999.4µs
+     http_req_sending...............: avg=902.33µs min=0s      med=0s  max=2.03s  p(90)=0s       p(95)=0s
+     http_req_tls_handshaking.......: avg=0s       min=0s      med=0s  max=0s     p(90)=0s       p(95)=0s
+     http_req_waiting...............: avg=152.2ms  min=821µs   med=3ms max=35.22s p(90)=446.74ms p(95)=751.91ms
+     http_reqs......................: 1315213 7272.100637/s
+     iteration_duration.............: avg=168.79ms min=962.6µs med=3ms max=38.04s p(90)=471ms    p(95)=787.05ms
+     iterations.....................: 1315213 7272.100637/s
+     vus............................: 7500    min=7500      max=7500  
+     vus_max........................: 7500    min=7500      max=7500

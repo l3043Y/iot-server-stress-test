@@ -1,0 +1,17 @@
+running (3m30.1s), 0000/7500 VUs, 946341 complete and 80 interrupted iterations
+constant_request_rate ✓ [======================================] 0080/7500 VUs  3m0s  7500 iters/s
+
+     ✗ is status 200
+      ↳  99% — ✓ 944472 / ✗ 1869
+     ✗ record is saved
+      ↳  99% — ✓ 944472 / ✗ 1869
+
+     http_req_receiving.............: avg=91.55µs  min=0s     med=0s      max=244.99ms p(90)=0s    p(95)=960.4µs
+     http_req_sending...............: avg=906.6µs  min=0s     med=0s      max=1.37s    p(90)=0s    p(95)=696.5µs
+     http_req_tls_handshaking.......: avg=0s       min=0s     med=0s      max=0s       p(90)=0s    p(95)=0s
+     http_req_waiting...............: avg=973.03ms min=0s     med=21.52ms max=1m1s     p(90)=1.78s p(95)=3.52s
+     http_reqs......................: 946341 4504.504706/s
+     iteration_duration.............: avg=1s       min=1.98ms med=22.35ms max=1m2s     p(90)=1.84s p(95)=3.62s
+     iterations.....................: 946341 4504.504706/s
+     vus............................: 7500   min=7500      max=7500
+     vus_max........................: 7500   min=7500      max=7500

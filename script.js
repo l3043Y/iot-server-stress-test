@@ -2,7 +2,7 @@ import http from 'k6/http';
 import { check } from 'k6';
 import { randomIntBetween, uuidv4 } from "https://jslib.k6.io/k6-utils/1.0.0/index.js";
 // import { sleep } from 'k6';
-const users = 6000;
+const users = 7500;
 export const options = {
     noConnectionReuse: false,
     noCookiesReset: true,
@@ -31,7 +31,8 @@ export default function () {
     const params = {
         headers: {
             'Content-Type': 'application/json',
-        },
+          },
+        // timeout: 1000000
     };
 
     const res = http.post(url, payload, params);
