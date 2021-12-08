@@ -1,1 +1,1 @@
-k6 run --summary-export export.json --out statsd script.js
+k6 run --insecure-skip-tls-verify script.js
